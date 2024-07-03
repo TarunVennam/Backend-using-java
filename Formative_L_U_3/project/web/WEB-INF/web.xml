@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>team</servlet-name>
+        <servlet-class>team</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>teams</servlet-name>
+        <servlet-class>teams</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>forgetpassword</servlet-name>
+        <servlet-class>forgetpassword</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>resetpassword</servlet-name>
+        <servlet-class>resetpassword</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>team</servlet-name>
+        <url-pattern>/team</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>teams</servlet-name>
+        <url-pattern>/teams</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>forgetpassword</servlet-name>
+        <url-pattern>/forgetpassword</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>resetpassword</servlet-name>
+        <url-pattern>/resetpassword</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
